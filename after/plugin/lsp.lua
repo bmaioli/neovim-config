@@ -18,4 +18,8 @@ lsp.configure('sumneko_lua', {
     }
 })
 
+vim.diagnostic.config({
+    virtual_text = true,
+})
+
 lsp.setup()

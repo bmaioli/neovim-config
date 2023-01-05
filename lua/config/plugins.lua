@@ -21,7 +21,13 @@ return require('packer').startup(function(use)
   })
 
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
+  use('mbbill/undotree')
   use('tpope/vim-fugitive')
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   use {
       'VonHeikemen/lsp-zero.nvim',
