@@ -5,10 +5,10 @@ lsp.preset('recommended')
 lsp.ensure_installed({
     'tsserver',
     'eslint',
-    'sumneko_lua',
+    'lua_ls',
 })
 
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
@@ -18,8 +18,8 @@ lsp.configure('sumneko_lua', {
     }
 })
 
+lsp.setup()
+
 vim.diagnostic.config({
     virtual_text = true,
 })
-
-lsp.setup()

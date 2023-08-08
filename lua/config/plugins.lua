@@ -23,11 +23,8 @@ return require('packer').startup(function(use)
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  use('nvim-tree/nvim-tree.lua')
+  use('nvim-tree/nvim-web-devicons')
 
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -50,4 +47,6 @@ return require('packer').startup(function(use)
           {'rafamadriz/friendly-snippets'},
       }
   }
+
+  use 'f-person/git-blame.nvim'
 end)
