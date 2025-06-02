@@ -8,6 +8,6 @@ local autocmd = vim.api.nvim_create_autocmd
 augroup("setIndent", { clear = true })
 autocmd("Filetype", {
     group = "setIndent",
-    pattern = { "javascript", "typescript" },
+    pattern = { "javascript", "typescript", "typescriptreact", "typescript.tsx" },
     command = "setlocal shiftwidth=2 tabstop=2"
 })

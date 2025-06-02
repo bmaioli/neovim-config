@@ -7,4 +7,5 @@ require("nvim-tree").setup({
     }
 })
 
-vim.keymap.set("n", "<leader>ft", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>tt", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>ft", vim.cmd.NvimTreeFindFile)
